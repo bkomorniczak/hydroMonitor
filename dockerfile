@@ -17,10 +17,3 @@ COPY init.sql /docker-entrypoint-initdb.d/
 #docker start postgres-docker
 #docker run -d --name my-postgres-container -p 5555:5432 my-hydro-image
 #docker stop postgres-docker
-
-#ADD data.sql /etc/postgres/data.sql
-#
-#RUN sed -i 's/POSTGRES_DATABASE/'$POSTGRES_DATABASE'/g' /etc/postgres/data.sql
-#RUN cp /etc/postgres/data.sql /docker-entrypoint-initdb.d
-#
-#EXPOSE 5432
