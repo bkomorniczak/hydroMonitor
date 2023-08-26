@@ -1,4 +1,4 @@
-import czarna_nida_water_levels
+from src.service import czarna_nida_water_levels
 
 id_hydro_daleszyce = "150200160"
 
